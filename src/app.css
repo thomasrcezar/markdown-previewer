@@ -1,0 +1,40 @@
+
+:root {
+    --primary-color: #007bff; /* Bootstrap primary blue */
+    --secondary-color: #6c757d; /* Bootstrap secondary gray */
+    --background-color: #87b5b5; /* Light background for more readability */
+    --text-color: #333; /* Main text color */
+    --font-family: 'Arial', sans-serif; /* Main font family */
+    --heading-font-size: 1.5rem; /* Size for headings in the preview */
+    --text-font-size: 1rem; /* Regular text size */
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+}
+
+/* Add Bootstrap classes customization if needed */
+.container {
+    padding: 2rem;
+}
+
+/* Specific styles for editor and preview areas */
+#editor, #preview {
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+    border-radius: 0.25rem;
+    height: 400px; /* Fixed height or based on viewport */
+    overflow: auto; /* Adds scrollbar when content is too long */
+}
+
+#editor {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    #editor, #preview {
+        height: 600px; /* Larger fixed height on larger screens */
+    }
+}
